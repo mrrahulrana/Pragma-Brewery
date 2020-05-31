@@ -2,9 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:once": "npm test -- --verbose --coverage",
+    "test:watch": "npm test -- --watch --coverage --verbose false",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +15,9 @@
   "dependencies": {
     "axios": "^0.19.2",
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
   }
 }
