@@ -1,0 +1,74 @@
+.refrigerators-list {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .refrigerators-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.refrigerators-list__card {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  transition: all ease 0.2s;
+}
+
+.refrigerators-list__name {
+  font-weight: 500;
+}
+
+.refrigerators-list__tag {
+  background-color: #dfe3e8;
+  border-radius: 32px;
+  color: #161d25;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 20px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.refrigerators-list__card--too_high {
+  border-color: #de3618;
+}
+
+.refrigerators-list__card--too_high .refrigerators-list__tag {
+  background-color: #de3618;
+  color: #fff;
+}
+
+.refrigerators-list__card--high {
+  border-color: #fead9a;
+}
+
+.refrigerators-list__card--high .refrigerators-list__tag {
+  background-color: #fead9a;
+}
+
+.refrigerators-list__card--low {
+  border-color: #b4e1fa;
+}
+
+.refrigerators-list__card--low .refrigerators-list__tag {
+  background-color: #b4e1fa;
+}
+
+.refrigerators-list__card--too_low {
+  border-color: #006fbb;
+}
+
+.refrigerators-list__card--too_low .refrigerators-list__tag {
+  background-color: #006fbb;
+  color: #fff;
+}

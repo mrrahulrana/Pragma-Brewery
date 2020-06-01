@@ -18,6 +18,9 @@ module.exports = {
         new HtmlWebpackPlugin ({
             template : './app/index.html'
         })
+        // ,
+        // "@babel/plugin-proposal-class-properties",
+        // "@babel/plugin-transform-runtime"
     ]
 
 }

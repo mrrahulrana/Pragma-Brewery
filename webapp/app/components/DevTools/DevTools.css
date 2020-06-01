@@ -1,0 +1,35 @@
+.devtools {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.devtools__beer-name {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.devtools__button {
+  background: #5c6ac4;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.devtools__beer-temperature {
+  display: inline-block;
+  margin: 8px;
+  text-align: center;
+  width: 50px;
+}
+
+.devtools__description {
+  font-size: 14px;
+  margin: 16px 0;
+}
