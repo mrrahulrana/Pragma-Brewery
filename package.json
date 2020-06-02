@@ -2,9 +2,13 @@
   "name": "Pragma-Brewery",
   "version": "1.0.0",
   "description": "This application displays current temperature of each container and notifies when the temperatures are outside the correct range.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently npm:start:*",
+    "start:backend": "cd backend && npm install && npm start",
+    "start:webapp": "cd webapp && npm install && npm start",
+    "test": "concurrently npm:test:*",
+    "test:backend": "cd backend && npm run test:once",
+    "test:webapp": "cd webapp && npm run test:once"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mrrahulrana/Pragma-Brewery/issues"
   },
-  "homepage": "https://github.com/mrrahulrana/Pragma-Brewery#readme"
+  "homepage": "https://github.com/mrrahulrana/Pragma-Brewery#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
 }

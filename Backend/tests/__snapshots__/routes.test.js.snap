@@ -1,42 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Http server should respond with a list of beers on /beers path 1`] = `
 Array [
   Object {
-    "id": "1",
+    "id": "UENki",
     "maximumTemperature": 6,
     "minimumTemperature": 4,
     "name": "Pilsner",
     "temperature": 0,
   },
   Object {
-    "id": "2",
+    "id": "ZSNsj",
     "maximumTemperature": 6,
     "minimumTemperature": 5,
     "name": "IPA",
     "temperature": 0,
   },
   Object {
-    "id": "3",
+    "id": "4A2hy",
     "maximumTemperature": 7,
     "minimumTemperature": 4,
     "name": "Lager",
     "temperature": 0,
   },
   Object {
-    "id": "4",
+    "id": "ON0XP",
     "maximumTemperature": 8,
     "minimumTemperature": 6,
     "name": "Stout",
     "temperature": 0,
   },
   Object {
-    "id": "5",
+    "id": "bOdjv",
     "maximumTemperature": 5,
     "minimumTemperature": 3,
     "name": "Wheat beer",
     "temperature": 0,
   },
   Object {
-    "id": "6",
+    "id": "mB9Ss",
     "maximumTemperature": 6,
     "minimumTemperature": 4,
     "name": "Pale Ale",

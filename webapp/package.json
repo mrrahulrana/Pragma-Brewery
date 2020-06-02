@@ -18,8 +18,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mrrahulrana/Pragma-Brewery/issues"
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   },
   "homepage": "https://github.com/mrrahulrana/Pragma-Brewery#readme",
   "dependencies": {
@@ -32,7 +34,17 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ],
+            "node": "10"
+          }
+        }
+      ],
       "@babel/preset-react"
     ],
     "plugins": [

@@ -1,7 +1,7 @@
 const http = require('http').createServer(require('./routes'));
 const socket = require('socket.io')(http);
 
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 3000;
 
 socket.on('connection', require('./beerUpdates'));
 
