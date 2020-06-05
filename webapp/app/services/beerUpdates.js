@@ -1,7 +1,7 @@
 const socket = require('socket.io-client');
 
 const beerUpdates = beerId =>
-  socket.connect(process.env.API_URL, {
+  socket.connect('http://localhost:3000', {
     query: { id: beerId },
   });
 

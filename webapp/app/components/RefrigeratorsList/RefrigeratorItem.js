@@ -19,7 +19,7 @@ const RefrigeratorItem = ({ beer, updateBeerTemperature }) => {
         <h2 className="refrigerators-list__name">
           {beer.name} (<strong>{beer.temperature}°C</strong>)
         </h2>
-        <p>{`${beer.minimumTemperature}°C - ${beer.maximumTemperature}°C`}</p>
+        <p>[ Min: {`${beer.minimumTemperature}°C - Max: ${beer.maximumTemperature}°C`} ]</p>
       </header>
 
       {beer.status !== 'OK' && (

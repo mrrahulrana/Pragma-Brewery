@@ -11,7 +11,7 @@ const BeerItem = ({ beer, updateBeerTemperature }) => (
       onClick={() => {
         updateBeerTemperature({
           ...beer,
-          temperature: parseFloat((beer.temperature - 0.1).toFixed(1)),
+          temperature: parseFloat((beer.temperature - 1.0).toFixed(1)),
         });
       }}
     >
@@ -31,7 +31,7 @@ const BeerItem = ({ beer, updateBeerTemperature }) => (
       onClick={() => {
         updateBeerTemperature({
           ...beer,
-          temperature: parseFloat((beer.temperature + 0.1).toFixed(1)),
+          temperature: parseFloat((beer.temperature + 1.0).toFixed(1)),
         });
       }}
     >

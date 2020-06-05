@@ -10,7 +10,7 @@ const DevTools = () => (
   <Subscribe to={[BeersContainer]}>
     {({ state, updateBeerTemperature }) => (
       <div className="devtools">
-        <h2>Control Temperature</h2>
+        <h2>Beers Temperature</h2>
         <p className="devtools__description">
           Simulate the temperature change.
         </p>
