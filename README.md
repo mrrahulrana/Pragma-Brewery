@@ -39,7 +39,7 @@ server and dispatch an update after every new socket message.
 Developer simulation component(optional) is also created to simulate the temprature by user for any beer.
 
 Each beer component will present 5 possible status and show the alert within component with color change:
-# Alert Status
+# Alert Status-
 OK: The temperature is under control, No Alert.
 Low: The temperature is less than Minimum temperature limit but not with large difference.
 TOO LOW: The temperature is less than Minimum temperature limit with large difference.
