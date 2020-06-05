@@ -1,18 +1,18 @@
 # Pragma-Brewery
 This application displays current temperature of each container and notifies when the temperatures are outside the correct range.
 
-Running the application:
+# Running the application:
 
 # Install dependencies #
-$ npm install
+    $ npm install
 
 # Run development Frontend(Webapp)/Backend(API) #
-$ npm start
+    $ npm start
 
 # Run tests #
-$ npm test ## All tests
-$ npm run test:backend ## Backend API tests
-$ npm run test:webapp ## Frontend application tests
+    $ npm test ## All tests
+    $ npm run test:backend ## Backend API tests
+    $ npm run test:webapp ## Frontend application tests
 
 # Architecture:
 This solution is built on top of a JavaScript stack, with a NodeJS ans Socket.io API which provides the temprature updates of each beer container and the frontend with ReactJS.
@@ -40,11 +40,11 @@ Developer simulation component(optional) is also created to simulate the temprat
 
 Each beer component will present 5 possible status and show the alert within component with color change:
 # Alert Status-
-OK: The temperature is under control, No Alert.
-Low: The temperature is less than Minimum temperature limit but not with large difference.
-TOO LOW: The temperature is less than Minimum temperature limit with large difference.
-HIGH: The temperature is higher than Maximum temperature limit but not with large difference.
-TOO HIGH: The temperature is higher than Maximum temperature limit with large difference.
+    OK: The temperature is under control, No Alert.
+    Low: The temperature is less than Minimum temperature limit but not with large difference.
+    TOO LOW: The temperature is less than Minimum temperature limit with large difference.
+    HIGH: The temperature is higher than Maximum temperature limit but not with large difference.
+    TOO HIGH: The temperature is higher than Maximum temperature limit with large difference.
 
 # What are the highlights of your logic/code writing style?
 The application uses state containers which built upon State management library(i.e. unstated) that relies on plain JavaScript classes to keep the state. It is simple to test and integrate with React. Also, used WebSocket implementation which responsible to handle temperature updates and send the update to the frontend client.
